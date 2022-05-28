@@ -1,5 +1,213 @@
-$dark-background: rgb(68, 68, 68);
+$grey: rgb(231, 231, 231);
+$blue: dodgerblue;
+$yellow: rgb(255, 196, 0);
 
-:root {
-    background-color: $dark-background;
+button:hover {
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    background-color: $blue;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 20vw);
+    /* grid-template-rows: repeat(13, 1fr);
+ */}
+
+
+.logo {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .logo {
+        height: 50px ;
+        color: white;
+    }
+    .site-name {
+        font-size: 2.4rem;
+    }
+}
+
+.side-element {
+    font-size: 1.6rem;
+    height: 1.5rem;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+.right-side {
+    width: 80vw;
+}
+
+.top {
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 4fr;
+    align-content: center;
+}
+
+.search {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2;
+}
+
+form {
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    gap: 50px;
+    input {
+        width: 40vw;
+        height: 2.5rem;
+        background-color: $grey;
+        border: 0px;
+        border-radius: 40px;
+        align-self: center;
+    }
+    button {
+        align-self: center;
+        border: 0px;
+        background-color: transparent;
+        opacity: 100;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column: 4;
+    .notifications {
+        height: 40px;
+    }
+    .picture {
+        height: 70px;
+        border-radius: 70px;
+        padding: 5px;
+        background-color: $yellow;
+    }
+    .profile-name {
+        font-size: 1.5rem;
+
+    }
+}
+
+.bottom {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 4fr;
+    align-content: center;
+    padding-right: 20px;
+}
+
+.greeting {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    img {
+        grid-row: span 2;
+        justify-self: start;
+        align-self: center;
+        border-radius: 70px;
+        background-color: $yellow;
+        padding: 5px;
+    }
+    p {
+        align-self:flex-end;
+        font-size: 1.5rem;
+    }
+    .name {
+        align-self: flex-start;
+        font-size: 2.0rem;
+    }
+}
+
+.post-options {
+    display: grid;
+    grid-column: 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-content: center;
+    .option {
+        font-size: 1.5rem;
+        background-color: $blue;
+        border: 0;
+        border-radius: 50px;
+        padding: 10px;
+        grid-row: 1;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    background-color: $grey;
+    box-shadow: inset 0 6px 10px rgba($color: #000000, $alpha: 0.5);
+    padding-top: 20px;
+    .projects {
+        grid-row: span 2;
+        .heading {
+            font-size: 1.6rem;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+        .cont {
+            .tiles {
+                width: 59vw;
+                grid-column: 2;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 300px);
+                grid-template-rows: repeat(auto-fill, 250px);
+                gap: 30px;
+                justify-content: center;
+                .tile {
+                    height: 250px;
+                    width: 260px;
+                    background-color: white;
+                    border-radius: 20px;
+                    display: grid;
+                    grid-template-rows: 2fr 5fr 2fr;
+                    box-shadow: inset 10px 0 0 $yellow;
+                    padding: 0 20px 0 20px;
+                    .name {
+                        font-weight: 800;
+                        align-self: flex-end;
+                    }
+                    .description {
+                        font-size: 0.8rem;
+                    }
+                    .buttons {
+                        display: flex;
+                        justify-content: right;
+                        .btn1, .btn2, .btn3 {
+                            height: 25px;
+                            padding-right: 10px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .right-bar {
+
+    }
 }

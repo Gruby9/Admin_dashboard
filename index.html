@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="/media/l_logo.png" alt="ERROR0" class="logo">
+            <h1 class="site-name">Dashboard</h1>
+        </div>
         <div class="side-element">Home</div>
         <div class="side-element">Profile</div>
         <div class="side-element">Messages</div>
@@ -19,96 +25,178 @@
         <div class="side-element"></div>
         <div class="side-element">Settings</div>
         <div class="side-element">Support</div>
-        <div class="side-element">Privacy</div>        
+        <div class="side-element">Privacy</div> 
+        <div class="side-element"></div>
+        <div class="side-element"></div>
+        <div class="side-element"></div>
+        <div class="side-element"></div>
+        <div class="side-element"></div>
+        <div class="side-element"></div>
     </div>
-    <div class="nav">
-        <div class="top">
-            <div class="search">
-                <div class="search-logo"></div>
-                <div class="search-field"></div>
+    <div class="right-side">
+        <div class="nav">
+            <div class="top">
+                <div class="search">
+                    <form action="" method="get">
+                        <input type="search" name="search" id="search">
+                        <button type="submit"><img src="/media/s_search.png" alt="ERROR.5"></button>
+                    </form>
+                </div>
+                <div class="profile">
+                    <img class="notifications" src="/media/s_bell.png" alt="ERROR2">
+                    <img class="picture" src="/media/l_cat.png" alt="ERROR3">
+                    <p class="profile-name">Morgan Freeman</p>
+                </div>
             </div>
-            <div class="profile">
-                <img src="" alt="">
-                <img src="" alt="">
-                <div class="theme-selector"></div>
-                <p class="profile-name">Morgan Freeman</p>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="greeting">
-                <p>Hello there,</p>
-                <h2 class="name">Morgan Freeman (@morgan)</h2>
-            </div>
-            <div class="post-options">
-                <button class="option">New</button>
-                <button class="option">Upload</button>
-                <button class="option">Share</button>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="projects">
-            <div class="name"></div>
-            <div class="tiles">
-                <div class="tile">
-                    <p class="name"></p>
-                    <p class="description"></p>
-                    <div class="buttons">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+            <div class="bottom">
+                <div class="greeting">
+                    <img src="/media/l_cat.png" alt="ERROR4" class="picture">
+                    <p>Hello there,</p>
+                    <h2 class="name">Morgan Freeman (@morgan)</h2>
                 </div>
-                <div class="tile">
-                    <p class="name"></p>
-                    <p class="description"></p>
-                    <div class="buttons">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+                <div class="post-options">
+                    <button class="option">New</button>
+                    <button class="option">Upload</button>
+                    <button class="option">Share</button>
                 </div>
-                <div class="tile">
-                    <p class="name"></p>
-                    <p class="description"></p>
-                    <div class="buttons">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="tile">
-                    <p class="name"></p>
-                    <p class="description"></p>
-                    <div class="buttons">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="tile">
-                    <p class="name"></p>
-                    <p class="description"></p>
-                    <div class="buttons">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="tile">
-                    <p class="name"></p>
-                    <p class="description"></p>
-                    <div class="buttons">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
-                </div>                
             </div>
         </div>
-        <div class="right-bar">
-            <div class="announcements"></div>
-            <div class="trending"></div>
+        <div class="main">
+            <div class="projects">
+                <div class="heading">Your Projects</div>
+                    <div class="cont">
+                        <div class="tiles">
+                            <div class="tile">
+                                <p class="name">Super cool Project</p>
+                                <p class="description">Lorem ipsum dolor sit amet,
+                                    consectetur adipisciostrud</p>
+                                <div class="buttons">
+                                    <img class="btn1" src="/media/s_star.png" alt="ERROR5">
+                                    <img class="btn2" src="/media/s_see.png" alt="ERROR6">
+                                    <img class="btn3" src="/media/s_share.png" alt="ERROR7">
+                                </div>
+                            </div>
+                            <div class="tile">
+                                <p class="name">Less Coool Project</p>
+                                <p class="description">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrudLorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud</p>
+                                <div class="buttons">
+                                    <img class="btn1" src="/media/s_star.png" alt="ERROR5">
+                                    <img class="btn2" src="/media/s_see.png" alt="ERROR6">
+                                    <img class="btn3" src="/media/s_share.png" alt="ERROR7">
+                                </div>
+                            </div>
+                            <div class="tile">
+                                <p class="name">Impossible App</p>
+                                <p class="description">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolorveniam, quis nostrudLorem
+                                    ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et doe magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud</p>
+                                <div class="buttons">
+                                    <img class="btn1" src="/media/s_star.png" alt="ERROR5">
+                                    <img class="btn2" src="/media/s_see.png" alt="ERROR6">
+                                    <img class="btn3" src="/media/s_share.png" alt="ERROR7">
+                                </div>
+                            </div>
+                            <div class="tile">
+                                <p class="name">Easy Peasy App</p>
+                                <p class="description">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud</p>
+                                <div class="buttons">
+                                    <img class="btn1" src="/media/s_star.png" alt="ERROR5">
+                                    <img class="btn2" src="/media/s_see.png" alt="ERROR6">
+                                    <img class="btn3" src="/media/s_share.png" alt="ERROR7">
+                                </div>
+                            </div>
+                            <div class="tile">
+                                <p class="name">Ad Blocker</p>
+                                <p class="description">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et trud</p>
+                                <div class="buttons">
+                                    <img class="btn1" src="/media/s_star.png" alt="ERROR5">
+                                    <img class="btn2" src="/media/s_see.png" alt="ERROR6">
+                                    <img class="btn3" src="/media/s_share.png" alt="ERROR7">
+                                </div>
+                            </div>
+                            <div class="tile">
+                                <p class="name">Money Maker</p>
+                                <p class="description">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrudLorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud</p>
+                                <div class="buttons">
+                                    <img class="btn1" src="/media/s_star.png" alt="ERROR5">
+                                    <img class="btn2" src="/media/s_see.png" alt="ERROR6">
+                                    <img class="btn3" src="/media/s_share.png" alt="ERROR7">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="right-bar">
+                <div class="announcements">
+                    <div class="name">Announcements</div>
+                    <div class="list">
+                        <div class="sub">
+                            <div class="name">Site Maintenance</div>
+                            <div class="content">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et... </div>
+                        </div>
+                        <div class="sub">
+                            <div class="name">Community Share Day</div>
+                            <div class="content">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit...</div>
+                        </div>
+                        <div class="sub">
+                            <div class="name">Updated Privacy Policy</div>
+                            <div class="content">Lorem ipsum dolor sit amet,
+                                consectetur adipiscingt...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="name"></div>
+                    <div class="list">
+                        <img src="/media/l_dog.png" alt="ERROR8"
+                            class="profilepicture">
+                        <div class="profilename">@tagan</div>
+                        <div class="description">World Peace Builder</div>
+                    </div>
+                    <div class="list">
+                        <img src="/media/l_hamster.png" alt="ERROR9"
+                            class="profilepicture">
+                        <div class="profilename">@grugru</div>
+                        <div class="description">Super Cool Project</div>
+                    </div>
+                    <div class="list">
+                        <img src="/media/l_rabbit.png" alt="ERROR10"
+                            class="profilepicture">
+                        <div class="profilename">@kendl</div>
+                        <div class="description">Life Changer</div>
+                    </div>
+                    <div class="list">
+                        <img src="/media/l_snake.png" alt="ERROR11"
+                            class="profilepicture">
+                        <div class="profilename">@alex</div>
+                        <div class="description">Disstrafficer</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
