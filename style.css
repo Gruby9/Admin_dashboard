@@ -43,6 +43,7 @@ body {
 }
 
 .logo .site-name {
+  color: #ffc400;
   font-size: 2.4rem;
 }
 
@@ -131,10 +132,11 @@ form button {
 }
 
 .profile .picture {
-  height: 70px;
+  height: 55px;
   border-radius: 70px;
   padding: 5px;
   background-color: #ffc400;
+  margin: 5px 0 5px 0;
 }
 
 .profile .profile-name {
@@ -157,14 +159,15 @@ form button {
   display: grid;
   -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
 }
 
 .greeting img {
   grid-row: span 2;
+  height: 85px;
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: center;
@@ -214,23 +217,20 @@ form button {
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   height: 80vh;
   background-color: #e7e7e7;
   -webkit-box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.5);
           box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.5);
-  padding-top: 20px;
 }
 
 .main .projects {
-  grid-row: span 2;
+  padding-top: 20px;
 }
 
 .main .projects .heading {
   font-size: 1.6rem;
-  padding-bottom: 20px;
-  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
   font-weight: 700;
 }
 
@@ -259,8 +259,8 @@ form button {
   display: grid;
   -ms-grid-rows: 2fr 5fr 2fr;
       grid-template-rows: 2fr 5fr 2fr;
-  -webkit-box-shadow: inset 10px 0 0 #ffc400;
-          box-shadow: inset 10px 0 0 #ffc400;
+  -webkit-box-shadow: inset 10px 0 0 #ffc400, 2px 5px 8px 0px #464646;
+          box-shadow: inset 10px 0 0 #ffc400, 2px 5px 8px 0px #464646;
   padding: 0 20px 0 20px;
 }
 
@@ -271,6 +271,7 @@ form button {
 }
 
 .main .projects .cont .tiles .tile .description {
+  color: dimgray;
   font-size: 0.8rem;
 }
 
@@ -286,5 +287,116 @@ form button {
 .main .projects .cont .tiles .tile .buttons .btn1, .main .projects .cont .tiles .tile .buttons .btn2, .main .projects .cont .tiles .tile .buttons .btn3 {
   height: 25px;
   padding-right: 10px;
+}
+
+.main .right-bar {
+  height: 80vh;
+  padding: 0 20px 0px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.main .right-bar .announcements {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.main .right-bar .announcements .heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.main .right-bar .announcements .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+  background-color: white;
+  row-gap: 20px;
+  padding: 20px 0 10px 0;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 5px 8px 0px #464646;
+          box-shadow: 2px 5px 8px 0px #464646;
+}
+
+.main .right-bar .announcements .list .sub {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.main .right-bar .announcements .list .sub .name {
+  font-weight: 700;
+}
+
+.main .right-bar .announcements .list .sub .content {
+  font-size: 0.7rem;
+  color: dimgray;
+}
+
+.main .right-bar .announcements .list .n1, .main .right-bar .announcements .list .n2 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.main .right-bar .trending .heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.main .right-bar .trending .list {
+  background-color: white;
+  border-radius: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 0 10px 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 5px 8px 0px #464646;
+          box-shadow: 2px 5px 8px 0px #464646;
+}
+
+.main .right-bar .trending .list .sub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.main .right-bar .trending .list .sub img {
+  height: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  justify-self: flex-end;
+  background-color: #ffc400;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.main .right-bar .trending .list .sub .profilename {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main .right-bar .trending .list .sub .description {
+  color: dimgray;
 }
 /*# sourceMappingURL=style.css.map */
